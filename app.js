@@ -18,7 +18,7 @@ var dbRouter = require('./routes/db');
 
 const { Pool } = require('pg');
 const pool = new Pool({
-  connectionString: process.env."postgres://tzsnvlqiqsqtuu:2402aeec4e85e6b3588f49d6225f56ad6d202dda53539388726d91dd3eef643a@ec2-3-223-9-166.compute-1.amazonaws.com:5432/dbmjaneci7591t",
+  connectionString: process.env.DATABASE_URL,
   ssl: {
     rejectUnauthorized: false
   }
