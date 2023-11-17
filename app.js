@@ -10,22 +10,11 @@ var usersRouter = require('./routes/users');
 //**
 
 var miRutaRouter = require('./routes/miruta');
-var dbRouter = require('./routes/db');
+//var dbRouter = require('./routes/db');
+var dbRouter = require('./routes/db-render');
 
 //**
 
-//** BD
-
-/*const { Pool } = require('pg');
-const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false
-  }
-});
-*/
-
-//**BD
 var app = express();
 
 // view engine setup
